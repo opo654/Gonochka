@@ -42,7 +42,7 @@ public class NewPlayerScript : MonoBehaviour
         }
 
 
-        transform.Translate(Vector3.forward * speed * Time.deltaTime * vertical);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
         transform.Rotate(Vector3.up * rotationspeed * Time.deltaTime * horizontal);
         if (OutOfBounds())
         {
